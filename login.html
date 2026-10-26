@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Đăng nhập — AZFIN Academy</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div data-header></div>
+
+  <!-- Bố cục 2 cột: cột trái là "mặt tiền thương hiệu", cột phải là biểu mẫu -->
+  <main class="auth">
+    <aside class="auth-aside">
+      <span class="eyebrow">AZFIN Academy</span>
+      <div>
+        <blockquote>Đầu tư là hành trình của kiến thức, không phải ván cược của may mắn.</blockquote>
+        <cite>— Lộ trình học 5 cấp độ</cite>
+      </div>
+      <p class="small" style="color:#8d8474;position:relative;z-index:2">
+        Tạo tài khoản để lưu tiến độ, tài liệu học tập và kết quả bài thi của bạn.
+      </p>
+    </aside>
+
+    <section class="auth-main">
+      <div class="tabs">
+        <button class="tab is-active" type="button" data-tab="login">Đăng nhập</button>
+        <button class="tab" type="button" data-tab="register">Đăng ký</button>
+      </div>
+
+      <div class="alert" id="alert"></div>
+
+      <!-- ===== Form đăng nhập ===== -->
+      <form id="loginForm" autocomplete="on">
+        <h1>Chào mừng trở lại</h1>
+        <p class="muted" style="margin-bottom:26px">Đăng nhập để tiếp tục chương trình học của bạn.</p>
+
+        <div class="field">
+          <label for="loginEmail">Email</label>
+          <input class="input" type="email" id="loginEmail" name="email" placeholder="ban@email.com" required>
+        </div>
+        <div class="field">
+          <label for="loginPassword">Mật khẩu</label>
+          <input class="input" type="password" id="loginPassword" name="password" placeholder="••••••••" required>
+        </div>
+        <button class="btn btn--dark btn--block" type="submit">Đăng nhập</button>
+
+        <p class="auth-foot">Chưa có tài khoản? <a href="#dang-ky" data-goto="register">Đăng ký ngay</a></p>
+      </form>
+
+      <!-- ===== Form đăng ký ===== -->
+      <form id="registerForm" class="hidden" autocomplete="off">
+        <h1>Tạo tài khoản</h1>
+        <p class="muted" style="margin-bottom:26px">Miễn phí, mất khoảng 30 giây.</p>
+
+        <div class="field">
+          <label for="regName">Họ và tên</label>
+          <input class="input" type="text" id="regName" name="name" placeholder="Nguyễn Văn A" required minlength="2">
+        </div>
+        <div class="field">
+          <label for="regEmail">Email</label>
+          <input class="input" type="email" id="regEmail" name="email" placeholder="ban@email.com" required>
+        </div>
+        <div class="field">
+          <label for="regPassword">Mật khẩu</label>
+          <input class="input" type="password" id="regPassword" name="password" placeholder="Tối thiểu 8 ký tự" required minlength="8">
+          <p class="hint">Ít nhất 8 ký tự — nên có chữ hoa, chữ thường và số.</p>
+        </div>
+        <div class="field">
+          <label for="regConfirm">Nhập lại mật khẩu</label>
+          <input class="input" type="password" id="regConfirm" name="confirm" placeholder="••••••••" required minlength="8">
+        </div>
+        <button class="btn btn--dark btn--block" type="submit">Tạo tài khoản</button>
+
+        <p class="auth-foot">Đã có tài khoản? <a href="#dang-nhap" data-goto="login">Đăng nhập</a></p>
+      </form>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

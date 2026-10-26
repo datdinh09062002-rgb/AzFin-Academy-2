@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cấp độ — AZFIN Academy</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div data-header></div>
+
+  <main>
+    <!-- ===== Đầu trang cấp độ ===== -->
+    <section class="page-head">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="dashboard.html">Chương trình</a> &nbsp;/&nbsp; <span id="crumb">Cấp độ</span>
+        </div>
+        <span class="eyebrow" id="levelEyebrow">Cấp độ</span>
+        <h1 id="levelTitle">Đang tải…</h1>
+        <p class="lead" id="levelTagline"></p>
+        <div class="alert" id="alert" style="margin-top:20px"></div>
+      </div>
+    </section>
+
+    <!-- ===== Danh sách bài học ===== -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="section-head" style="margin-bottom:18px">
+          <span class="eyebrow">Tài liệu học tập</span>
+          <h3>Nội dung cấp độ</h3>
+        </div>
+        <div id="lessons"><p class="loading">Đang tải tài liệu…</p></div>
+
+        <!-- ===== Khối bài thi ===== -->
+        <div id="examBox"></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/level.js"></script>
+</body>
+</html>

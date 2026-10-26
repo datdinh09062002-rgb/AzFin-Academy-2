@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Làm bài thi — AZFIN Academy</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div data-header></div>
+
+  <main>
+    <!-- ===== Đầu trang bài thi ===== -->
+    <section class="page-head">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="dashboard.html">Chương trình</a> &nbsp;/&nbsp;
+          <a href="level.html?id=1" id="crumbLevel">Cấp độ</a> &nbsp;/&nbsp; <span>Bài thi</span>
+        </div>
+        <span class="eyebrow">Bài thi</span>
+        <h1 id="examTitle">Đang tải…</h1>
+        <p class="lead" id="examIntro"></p>
+        <div class="alert" id="alert" style="margin-top:20px"></div>
+      </div>
+    </section>
+
+    <!-- ===== Nội dung ===== -->
+    <section class="section--tight">
+      <div class="container">
+        <!-- Kết quả hiện ra ở đây sau khi nộp bài -->
+        <div id="resultBox"></div>
+
+        <!-- Thông tin bài thi -->
+        <div class="exam-meta" id="examMeta"></div>
+
+        <!-- Danh sách câu hỏi -->
+        <form id="examForm"><p class="loading">Đang tải câu hỏi…</p></form>
+
+        <!-- Thanh hành động dính dưới màn hình -->
+        <div class="exam-bar" id="examBar">
+          <span class="exam-bar__count" id="answeredCount">Đã trả lời 0 câu</span>
+          <button class="btn btn--dark" type="button" id="submitBtn">Nộp bài</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/exam.js"></script>
+</body>
+</html>

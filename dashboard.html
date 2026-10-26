@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chương trình học — AZFIN Academy</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div data-header></div>
+
+  <main>
+    <!-- ===== Tiêu đề trang + 3 chỉ số tổng ===== -->
+    <section class="page-head">
+      <div class="container">
+        <span class="eyebrow">Tổng quan học tập</span>
+        <h1 id="greeting">Chào mừng bạn</h1>
+        <p class="lead">Chọn một cấp độ để tiếp tục. Tiến độ và điểm số của bạn được lưu tự động.</p>
+
+        <div class="alert" id="alert" style="margin-top:20px"></div>
+        <div class="stat-strip" id="stats"></div>
+      </div>
+    </section>
+
+    <!-- ===== 5 thẻ cấp độ ===== -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="grid grid-3" id="levelGrid">
+          <p class="loading">Đang tải chương trình…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Lịch sử làm bài ===== -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="section-head" style="margin-bottom:20px">
+          <span class="eyebrow">Hoạt động gần đây</span>
+          <h3>Lịch sử làm bài</h3>
+        </div>
+        <div class="history" id="history"></div>
+      </div>
+    </section>
+  </main>
+
+  <div data-footer></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
