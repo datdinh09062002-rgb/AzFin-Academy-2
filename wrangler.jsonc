@@ -1,0 +1,31 @@
+// Cấu hình chạy LOCAL:  npx wrangler dev  (hoặc npm run dev)
+// Binding phải trùng với tên đã cấp trên Freebuff Sites: DB (D1) và FILES (R2).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dautu-academy",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-01",
+
+  // Thư mục chứa giao diện HTML/CSS/JS thuần
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS"
+  },
+
+  // CSDL quan hệ (SQLite) - dữ liệu người dùng, bài thi, lịch sử làm bài
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dautu-academy",
+      "database_id": "local-dautu-academy"
+    }
+  ],
+
+  // Kho file - tài liệu học tập do Admin tải lên
+  "r2_buckets": [
+    {
+      "binding": "FILES",
+      "bucket_name": "dautu-academy-files"
+    }
+  ]
+}

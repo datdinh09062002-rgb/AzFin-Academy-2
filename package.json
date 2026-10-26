@@ -1,0 +1,14 @@
+{
+  "name": "dautu-academy",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Học viện đầu tư 5 cấp độ - frontend HTML/CSS/JS thuần + backend Cloudflare Worker (D1/R2)",
+  "scripts": {
+    "dev": "wrangler dev",
+    "db:local": "wrangler d1 execute dautu-academy --local --command \"SELECT name FROM sqlite_master WHERE type='table'\""
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

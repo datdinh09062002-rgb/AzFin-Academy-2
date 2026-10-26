@@ -1,0 +1,6 @@
+# Thư mục Node portable tải về để chạy wrangler (không thuộc source)
+.tools/
+node_modules/
+# Wrangler local state
+.wrangler/
+*.log
